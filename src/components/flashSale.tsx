@@ -6,6 +6,7 @@ import { Card } from './ui/card'
 import Image from 'next/image'
 import { Badge } from './ui/badge'
 import ProductCard from './productCard'
+import { flashCard } from '@/constant/flashCard'
 
 function FlashSale() {
   return (
@@ -83,7 +84,7 @@ function FlashSale() {
 
         {/* cards div */}
         <div className='w-[1308px] h-[350px] bg-red-400 mt-[40px]'>
-           <ProductCard/>
+           <ProductCard loop={flashCard}/>
         </div>
 
 
