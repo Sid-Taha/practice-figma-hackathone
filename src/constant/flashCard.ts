@@ -7,7 +7,7 @@ export interface FlashCard {
   src: string;
   Heading: string;
   price: number;
-  oldPrice: number;
+  oldPrice?: number;
   star: number;
   reviews: number;
 }

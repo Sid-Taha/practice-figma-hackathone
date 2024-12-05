@@ -56,7 +56,8 @@ function ProductCard({loop}: {loop: FlashCard[]}) {
                 {/* 2 */}
                 <div className="flex gap-3">
                   <span className="text-red-500">${item.price}</span>
-                  <span className="text-gray-500 line-through">${item.oldPrice}</span>
+                  <span className="text-gray-500 line-through">{item.oldPrice && "$"}
+                    {item.oldPrice}</span>
                 </div>
       
                 {/* 3 */}

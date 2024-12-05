@@ -47,7 +47,6 @@ export const bestSellingCard = [
     src: "/best4.png",
     Heading: "Small BookSelf",
     price: 360,
-    oldPrice: 400,
     star: 5,
     reviews: 65
   },
