@@ -11,7 +11,7 @@ import { flashCard } from '@/constant/flashCard'
 function FlashSale() {
   return (
     <>
-      <section className='mb-[500px]'>
+      <section>
         {/* today's */}
         <RedHeading text={"Today's"} textColor={'red'} />
 
@@ -83,10 +83,15 @@ function FlashSale() {
 
 
         {/* cards div */}
-        <div className='w-[1308px] h-[350px] bg-red-400 mt-[40px]'>
-           <ProductCard loop={flashCard}/>
-        </div>
+        <div>
+          <div className='w-[1308px] bg-red-400 mt-[40px] flex gap-[30px] overflow-x-auto'>
+            <ProductCard loop={flashCard}/>
+          </div>
 
+          <div className='text-center mt-[60px]'>
+            <button className='bg-[#DB4444] py-[16px] px-[48px] hover:bg-gray-600 text-white'>View All Products</button>
+          </div>
+        </div>
 
 
 
