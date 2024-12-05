@@ -11,7 +11,7 @@ import { flashCard } from '@/constant/flashCard'
 function FlashSale() {
   return (
     <>
-      <section>
+      <section className='border-b-[1px] border-black pb-[60px]'>
         {/* today's */}
         <RedHeading text={"Today's"} textColor={'red'} />
 
