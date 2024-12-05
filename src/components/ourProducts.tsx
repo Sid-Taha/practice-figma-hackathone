@@ -99,15 +99,15 @@ function OurProducts() {
                     <div className={`w-[20px] h-[20px] rounded-full bg-${item.color2}-500`}></div>
                   </div>}
 
-
-
-
                 </div>
               </Card>
             )
           })}
         </div>
 
+        <div className='text-center mt-[60px]'>
+            <button className='bg-[#DB4444] py-[16px] px-[48px] hover:bg-gray-600 text-white'>View All Products</button>
+          </div>
       </section>
     </>
   )
