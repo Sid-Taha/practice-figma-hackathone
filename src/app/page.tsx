@@ -5,11 +5,12 @@ import Month from "@/components/month";
 
 export default function Home() {
   return (
-    <div className="px-[135px] overflow-hidden">
+    <div className="px-[135px] overflow-hidden mb-[500px]">
       <Hero/>
       <FlashSale/>
       <Category/>
       <Month/>
+      <OurProducts/>
     </div>
   );
 }

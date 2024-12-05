@@ -34,7 +34,6 @@ function Category() {
         <div className="w-full flex gap-[30px] mt-[60px]">
           {categoryCard.map((item, index)=>{return (
               <Card 
-             
               className={`w-[170px] h-[145px] flex gap-[16px] flex-col items-center justify-center 
                 ${item.isActive ? 'bg-red-500' : 'bg-white'}
                 ${item.isActive ? 'text-white' : 'text-black'}
