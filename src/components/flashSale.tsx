@@ -111,14 +111,23 @@ function FlashSale() {
 
 
             {/* Bottom content */}
-            <div className='w-full bg-green-500 flex flex-col gap-[6px]'>
-             
+            <div className='w-full flex flex-col gap-[6px] text-[16px] leading-[24px] font-medium pl-[3px]'>
+             {/* 1 */}
               <p className='mt-[10px]'>HAVIT HV-G92 Gamepad</p>
              
-              <div><span>$120</span> <span>$160</span></div>
+             {/* 2 */}
+              <div className='flex gap-3'>
+                <span className='text-red-500'>$120</span> 
+                <span className='text-gray-500 line-through'>$160</span>
+              </div>
              
-              <div>
-                 <Star/> 
+             {/* 3 */}
+              <div className='flex gap-1 items-center'>
+                {[...Array(5)].map(()=>{return (
+                    <Star size={20} fill='#FFAD33' color='#FFAD33'/> 
+                )})}
+
+                <p className='text-gray-500'>(88)</p>
               </div>
 
             </div>
