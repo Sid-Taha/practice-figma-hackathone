@@ -84,7 +84,7 @@ function FlashSale() {
 
         {/* cards div */}
         <div>
-          <div className='w-[1308px] bg-red-400 mt-[40px] flex gap-[30px] overflow-x-auto'>
+          <div className='w-[1308px]  mt-[40px] flex gap-[30px] overflow-x-auto'>
             <ProductCard loop={flashCard}/>
           </div>
 
