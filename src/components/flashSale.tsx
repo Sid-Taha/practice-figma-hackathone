@@ -1,7 +1,10 @@
 import React from 'react'
 import RedHeading from './redHeading'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Eye, Heart, Star, Trash2 } from 'lucide-react'
 import { Button } from './ui/button'
+import { Card } from './ui/card'
+import Image from 'next/image'
+import { Badge } from './ui/badge'
 
 function FlashSale() {
   return (
@@ -11,8 +14,8 @@ function FlashSale() {
         <RedHeading text={"Today's"} textColor={'red'} />
 
 
+        {/* flash sale */}
         <div className='flex justify-between items-end'>
-          {/* flash sale */}
           <div className='mt-[24px] flex items-center'>
             <h2 className='inline-block text-[36px] leading-[48px] font-semibold'>Flash Sales</h2>
 
@@ -77,6 +80,52 @@ function FlashSale() {
         </div>
 
 
+        {/* cards div */}
+        <div className='w-[1308px] h-[350px] bg-red-400 mt-[40px]'>
+          <Card className='w-[270px] h-full overflow-hidden'>
+            {/* Top Image */}
+            <div className='relative w-full h-[250px] bg-[#F5F5F5] p-3 flex justify-center items-center'>
+              <Image src="/card1.png" alt="image" width={172} height={152}></Image>
+              
+              {/* Badge */}
+              <Badge className='bg-[#DB4444] py-1 px-3 absolute top-3 left-3'>-40%</Badge>
+
+              {/* icon div */}
+              <div className='absolute top-3 right-3 flex flex-col gap-2'>
+                {/* trash */}
+                <Button size={"icon"} variant={"outline"} className='rounded-full w-[34px] h-[34px]'>
+                  <Trash2 size={24}/>
+                </Button>
+
+                {/* heart */}
+                <Button size={"icon"} variant={"outline"} className='rounded-full w-[34px] h-[34px]'>
+                  <Heart size={24}/>
+                </Button>
+
+                {/* eye */}
+                <Button size={"icon"} variant={"outline"} className='rounded-full w-[34px] h-[34px]'>
+                  <Eye size={24}/>
+                </Button>
+              </div>
+            </div>
+
+
+            {/* Bottom content */}
+            <div className='w-full bg-green-500 flex flex-col gap-[6px]'>
+             
+              <p className='mt-[10px]'>HAVIT HV-G92 Gamepad</p>
+             
+              <div><span>$120</span> <span>$160</span></div>
+             
+              <div>
+                 <Star/> 
+              </div>
+
+            </div>
+
+
+          </Card>
+        </div>
 
 
 
